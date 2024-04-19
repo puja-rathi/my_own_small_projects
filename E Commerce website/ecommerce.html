@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <header>
+    <h1>Shop Online</h1>
+    <button id="loginBtn">Login</button>
+  </header>
+  
+  <div id="loginForm" class="hidden">
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Login</button>
+     
+    </form>
+  </div>
+  <div id="content" class="hidden">
+    <h2>Welcome to our store!</h2>  
+    <div id="products" class="products-container">
+      <!-- Products will be displayed here -->
+    </div>
+  </div>
+
+
+  <script src="ecommerce.js"></script>
+</body>
+</html>
