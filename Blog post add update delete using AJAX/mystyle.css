@@ -1,0 +1,14 @@
+body{
+    background-color: beige;
+}
+form > input,textarea,button{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+form > button{
+    height: 30px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
