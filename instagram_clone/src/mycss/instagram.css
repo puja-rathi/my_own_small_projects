@@ -1,0 +1,178 @@
+/* Main app css */
+.main_app_div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+}
+
+
+.left_nav {
+    text-align: left;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.left_nav > .name{
+    margin-left: 40px;
+    font-size: 22px;
+}
+.allLinks > div{
+    margin-bottom: 25px;
+}
+.left_nav > .allLinks > span,
+.left_nav > .allLinks > a {
+    display: inline-block; /* Display elements as block */
+    margin-bottom: 20px; /* Add margin-bottom to separate each pair */  
+}
+.left_nav > .allLinks > div > span > img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.left_nav > .allLinks >div> span {
+    margin-right: 25px!important; /* Add margin-right to separate the span and a */
+    font-size: 24px;
+}
+
+.left_nav > .allLinks > div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+/* center content column css */
+.center_content{
+    background-color:white;
+    border-left: 1px solid gray;
+}
+.center_content > .stories {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.center_content > .stories > div{
+    display: flex;
+    flex-direction: column;
+}
+.center_content > .stories > div > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 2rem;
+    justify-content: space-evenly;
+}
+.center_content > .stories > div > span{
+    color: black;
+    font-size: 12px;
+    margin-left: 2rem;
+}
+.center_content > .posts{
+    padding: 3rem;
+    width: 100%;
+}
+
+
+
+
+/* right_suggestions column css */
+.right_suggestions{
+    text-align: right;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.right_suggestions > .firstdiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+} 
+.firstdiv > img , .thirddiv > img{
+    border-radius: 50%;
+}
+.right_suggestions > .seconddiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.seconddiv > .seeall, .firstdiv > .switch{
+    color: black;
+    text-decoration: none!important;
+    font-size: 13px; 
+}
+.seconddiv > .seeall:hover, .firstdiv > .switch:hover{
+    color: gray;
+}
+.seconddiv > .yoursuggestion{
+    color: gray;
+    font-size: 13px;
+}
+.seconddiv > .seeall{
+    padding-right: 10px; 
+    cursor: pointer;
+    color: black;
+}
+.right_suggestions > .thirddiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.thirddiv > .followcol{
+    text-decoration: none!important;
+    color: blue;
+    cursor: pointer;
+    font-size: 13px;
+}
+.thirddiv > .followcol:hover{
+    color: gray;
+}
+.firstdiv >.pname,.thirddiv >.pname{
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+ .firstdiv,.thirddiv {
+    display: flex;
+    align-items: center; 
+    padding: 10px; 
+} 
+.firstdiv > img, .thirddiv > img {
+    width: 50px; 
+    height: 50px;  
+  }
+  .pname {
+    margin-right: auto; 
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    
+  }
+  .switch,.followcol {
+    margin-left: 50px; 
+  }
+  .thirddiv img,
+  .thirddiv .pname,
+  .thirddiv .followcol {
+    margin-bottom: 20px; 
+  }
+.newToInstagram {
+    display: block;
+    margin-top: 3px; 
+    font-size: 10px;
+    color: gray;
+}
+  .fourthdiv{
+    margin-top:auto;
+    margin-bottom: 8rem; 
+}
+  .fourthdiv > p >a{
+    color: gray;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 2rem;
+}
+  
