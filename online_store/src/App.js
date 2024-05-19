@@ -13,14 +13,17 @@ import TotalPrice from './components/totalprice';
 // App function to render Header in all pages and in Routes component, render all other component based on url
 function App() {
 
+  //totalPrice initially 0
   const [totalPrice, setTotalPrice] = useState(0);
 
+  //updateTotalPrice contains price as argument and using callback set totalprice = prevPrice+current price
   const updateTotalPrice = (price) => {
         setTotalPrice(prevPrice => prevPrice + price);
     };
 
-
-  return (
+//return all components. Header and TotalPrice for all pages and other as selection of links and route
+//passed  updateTotalPrice argument in Products componnet to be used in products.js
+return (
     <div>
       <Header />
       <TotalPrice totalPrice={totalPrice} />

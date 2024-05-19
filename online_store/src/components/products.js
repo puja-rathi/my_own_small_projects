@@ -1,8 +1,6 @@
-// src/components/Products.js
+//import bootstrap components and all images
 import React, { useState } from 'react';
 import { Card, Button, Container, Row, Col, Dropdown } from 'react-bootstrap';
-
-
 import i1 from '../images/i1.jpg';
 import i2 from '../images/i2.jpg';
 import i3 from '../images/i3.jpg';
@@ -14,6 +12,7 @@ import i8 from '../images/i8.jpg';
 import i9 from '../images/i9.jpg';
 import i10 from '../images/i10.jpg';
 
+//declare products_details array for each 10 produts
 const products_details = [
     {
         id: 1,
@@ -97,6 +96,7 @@ const products_details = [
     }
 ];
 
+//by using useState and reduce method on array ,display Dropdown Button to each prouct
 const Products = ({ updateTotalPrice }) => {
     const [selectedColors, setSelectedColors] = React.useState(
         products_details.reduce((acc, product) => {
@@ -105,6 +105,7 @@ const Products = ({ updateTotalPrice }) => {
         }, {})
     );
 
+    //handleSelect function to handle dropdown value selection change. all other product's button's text will remain same except the one which selected
     const handleSelect = (productId, color) => {
         setSelectedColors({
             ...selectedColors,
@@ -112,11 +113,12 @@ const Products = ({ updateTotalPrice }) => {
         });
     };
 
+    //handleBuy function to handle buy button click event and set updateTotalPrice
     const handleBuy = (price) => {
         updateTotalPrice(price);
     };
     
-
+//main return to dynamically render all 10 images, dropdown and buy button event click using bootstrap components
     return (
         <Container className="mt-5">
             <Row>
