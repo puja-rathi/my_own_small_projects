@@ -1,0 +1,67 @@
+/* custom css for online store */
+body {
+    background-color: lightseagreen;
+    padding-top: 6rem;
+  }
+  
+  nav {
+    background-color: #343a40;
+    padding: 10px !important;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 20px !important;
+    color: #fff;
+    padding-left:3rem ;
+  
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.75);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255,255,255,1);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    color: #d4d4d4;
+  }
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+ 
+.total-price {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  color:red;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 1000;
+  width:18%;
+  height:7%;
+}
+.total-price > h2{
+  color:red;
+  font-size: 14px;
+}
+.fig_custom_caption{
+  margin-left: 50px;
+}
