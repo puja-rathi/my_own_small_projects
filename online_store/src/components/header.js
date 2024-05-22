@@ -7,7 +7,7 @@ import storelogo from '../images/storelogo.jpg';
 //Header function to render navigation menu for all pages(Links) using bootstrap
 const Header = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar bg="dark" variant="dark" expand="lg" >
       <Navbar.Brand as={Link} to="/">
             <Image
                     src={storelogo}
